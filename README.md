@@ -1,3 +1,30 @@
+Build Kibana
+============================
+
+SOURCE: https://github.com/elasticsearch/kibana/blob/master/CONTRIBUTING.md
+
+    wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
+    source ~/.nvm/nvm.sh
+    nvm install 0.10
+    npm install -g grunt-cli bower
+    sudo npm install && bower install --allow-root
+    sudo npm install abbrev
+    sudo npm install phantomjs -g
+    npm install q
+    npm install grunt-mocha -D
+    grunt test build ## TAKES A WHILE TO RUN
+    grunt dev ## STARTS THE LOCAL KIBANA DEV SERVER
+    ## IN /target LOOK AT THE COMPRESSED PACKAGES 
+
+
+Start serving kibana from a node js server
+===================================================
+
+    vim src/server/config/kibana.yml // change elasticsearch URL is needed
+    cd kibana/src/server/bin
+    chmod +rx kibana.sh
+
+
 <!-- render {"template":"# Kibana <%= pkg.version %>"} -->
 # Kibana 4.0.0-beta3
 <!-- /render -->
