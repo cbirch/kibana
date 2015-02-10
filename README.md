@@ -17,13 +17,6 @@ SOURCE: https://github.com/elasticsearch/kibana/blob/master/CONTRIBUTING.md
     ## IN /target LOOK AT THE COMPRESSED PACKAGES 
 
 
-Start serving kibana from a node js server
-===================================================
-
-    vim src/server/config/kibana.yml // change elasticsearch URL is needed
-    cd kibana/src/server/bin
-    chmod +rx kibana.sh
-
 
 <!-- render {"template":"# Kibana <%= pkg.version %>"} -->
 # Kibana 4.0.0-beta3
